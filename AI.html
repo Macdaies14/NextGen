@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Artificial Intelligence</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+        body{
+            width: 100%;
+            background: #131313;
+            height: 100vh;
+            color: #ddd;
+        }
+
+        .grid-text{
+            margin: 30px 70px;
+        }
+
+        .grid-text h3{
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Kumbh Sans', sans-serif;
+	        font-weight: bold;
+        }
+
+        article{
+            margin: 10px 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: all 0.2s linear;
+        }
+
+        img.active{
+            cursor: pointer;
+                opacity: 1;
+                transform: scale(1.02);
+                border: 1px solid #FFF;
+        }
+
+        .grid-container{
+           /* border: 1px solid #FFF; */
+           background-color: rgba(191, 191, 191, 0.571);
+           padding: 20px;
+           width: 65%;
+         
+           margin: 10px auto;
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           grid-gap:10px;
+           
+        }
+
+        .item-1{
+            grid-column: 1 / 3;
+        }
+
+        /* .item-2{
+            grid-column: 3/5;
+        } */
+
+        .item-4{
+             grid-column: 3/5;
+           
+        }
+
+        .item-5{
+            grid-column: 2 / 4;
+        }
+
+        .item-6{
+            grid-row: 2/5;
+            
+        }
+
+        .item-9{
+          grid-column: 3/5;
+        } 
+
+        @media (hover) {
+            img:hover{
+                cursor: pointer;
+                opacity: 1;
+                transform: scale(1.02);
+                border: 1px solid #FFF;
+            }
+       }
+
+       @media screen and (width < 1024px) {
+            .grid-container{
+                width: 80%;
+            }
+       }
+
+       @media screen and (width < 426px) {
+
+        .grid-text{
+            margin: 30px;
+        }
+
+        .article-intro h5{
+            font-size: 16px;
+        }
+        article{
+            font-size:14px;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="myNavbar">
+            <div class="logo">
+                <a href="index.html"><i class="fa-brands fa-artstation"></i> NEXT</a>
+            </div>
+            
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link">HOME</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="index.html#Tech" class="nav-menu-link">TECH</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="index.html#Contact" class="nav-menu-link">CONTACT</a>
+                </li>
+
+                <li class="nav-menu-item-button">
+                    <a href="signup.html"><button>SIGN UP</button></a>
+                </li>
+             </ul>
+            
+
+        </nav>
+    </header>
+    
+    <section>
+        <div class="grid-text">
+            <h3>Artificial Intelligence</h3>
+            <article class="article-intro">
+                <h5>What are Artificial Intelligence?</h5> <br> Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment.
+            </article>
+            <article>
+                The seeds of modern AI were planted by philosophers who attempted to describe the process of human thinking as the mechanical manipulation of symbols. This work culminated in the invention of the programmable digital computer in the 1940s, a machine based on the abstract essence of mathematical reasoning. This device and the ideas behind it inspired a handful of scientists to begin seriously discussing the possibility of building an electronic brain.
+            </article>
+            <article>
+                Virtual assistants like Siri, Cortana, Google Assistant, etc. have made our lives easy. A lot of social media applications make use of artificial intelligence for multiple uses. For example, Snapchat uses face detection to detect facial features and put on the filters accordingly, Twitter uses natural language processing to identify hate speech, Facebook/Instagram makes use of machine learning and deep learning to find the user’s field of interest, etc.
+            </article>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item item-1">
+              <img src="img/C.jpg" alt="img">
+          </div>
+            <div class="grid-item item-2">
+              <img src="img/E.jpg" alt="img">
+          </div>
+            <div class="grid-item item-3">
+              <img src="img/D.jpg" alt="img">
+          </div>
+          <div class="grid-item item-new">
+            <img src="img/G.jpg" alt="img">
+        </div>
+            <div class="grid-item item-4">
+              <img src="img/A.jpg" alt="img">
+          </div>
+            <div class="grid-item item-5">
+              <img src="img/F.jpg" alt="img">
+          </div>
+            <div class="grid-item item-6">
+              <img src="img/B.jpg" alt="img">
+          </div>
+            <div class="grid-item item-7">
+              <img src="img/H.jpg" alt="img">
+          </div>
+            <div class="grid-item item-8">
+              <img src="img/I.jpg" alt="img">
+          </div>
+            <div class="grid-item item-9">
+              <img src="img/J.jpg" alt="img">
+          </div>
+          </div>
+    </section>
+   
+
+     <!-- Footer Section-->
+    <section>
+        <div class="footer">
+            <div class="container footer-container">
+                <div class="row footer-row">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="under-construction.html"> How it works</a></li>
+                            <li><a href="under-construction.html"> Testimonial</a></li>
+                            <li><a href="under-construction.html"> Careers</a></li>
+                            <li><a href="under-construction.html"> Investments</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                      <h4>Contact Us</h4>
+                      <ul>
+                          <li><a href="under-construction.html"> Support </a></li>
+                          <li><a href="under-construction.html"> Sponsorship</a></li>
+                          <li><a href="under-construction.html"> FAQ</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="footer-col">
+                      <h4>Follow Us</h4>
+                      <div class="social-links">
+                          <a href="under-construction.html"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="under-construction.html"><i class="fa-brands fa-facebook-f"></i></a>
+                          <a href="under-construction.html"><i class="fa-brands fa-github"></i></a>
+                          <a href="under-construction.html"><i class="fa-brands fa-twitter"></i></a>
+                         
+                      </div>
+                  </div>
+
+                  <div class="footer-col">
+                      <h4>Newsletter</h4>
+                      <div class="footer-form">
+                          <input type="email" placeholder="Email">
+                          <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+        </div>   
+    </section>
+
+
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/2d3121e052.js" crossorigin="anonymous"></script>
+    <script src="js/AI.js"></script>
+</body>
+</html>
